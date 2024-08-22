@@ -21,7 +21,7 @@ app.use('/posts',posts)
 
 
 app.get('/',(req,res)=>{
-    res.json('Hey ');
+    res.send('Hey ');
 })
 
 
