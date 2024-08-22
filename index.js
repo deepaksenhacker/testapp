@@ -21,7 +21,7 @@ app.use('/posts',posts)
 
 
 
-app.get('/',(req,res)=>{
+app.get('/msg',(req,res)=>{
     res.send('Hey ');
 })
 
