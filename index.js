@@ -12,6 +12,7 @@ import posts from './Routes/posts.js'
 Connection();
 
 const app = express();
+const port =process.env.PORT || 4000;
 app.use(express.json());
 
 app.use(cors());
@@ -24,8 +25,7 @@ app.get('/',(req,res)=>{
     res.send('Hey ');
 })
 
-
-app.listen(process.env.PORT, () => console.log(`Example app listening on port ${process.env.VITE_API_URL}`));
+app.listen(port, () => console.log(`Example app listening on port ${process.env.VITE_API_URL}`));
 
 
 
